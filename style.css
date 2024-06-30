@@ -1,0 +1,19 @@
+* {
+  background-color: antiquewhite;
+}
+#header {
+  color: rgb(89, 42, 12);
+  letter-spacing: 1px;
+  text-align: center;
+}
+#photo {
+  width: 10em;
+  height: 10em;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.description,
+#hobbies {
+  margin: 50px 200px;
+}
