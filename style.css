@@ -1,17 +1,33 @@
 body {
-  background-image: url(./images/top-circle.svg);
+  /* background-image: url(./images/top-circle.svg),
+    url(./images/bottom-circle.svg); */
   background-color: #19a2ae;
   margin: 0 auto;
   font-family: "Arial", sans-serif;
 }
-
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
+#top-circle {
+  position: absolute;
+  z-index: 0;
+  bottom: 38%;
+  right: 54%;
+}
+#bottom-circle {
+  position: absolute;
+  z-index: 0;
+  top: 48%;
+  left: 55%;
+}
 #card {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 40%;
   width: 20em;
   height: 22em;
   margin: 10em auto;
@@ -37,7 +53,7 @@ body {
   border-radius: 50%;
   border: 5px solid white;
   position: absolute;
-  top: 35%; /* half of header height */
+  top: 23%; /* half of header height */
   left: 50%;
   transform: translateX(-50%);
 }
