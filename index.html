@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Victor Crest</title>
+    <title>Hazlo Ágil</title>
   </head>
 
   <body>
-    <img src="./images/top-circle.svg" alt="top-circle" id="top-circle" />
-    <img
-      src="./images/bottom-circle.svg"
-      alt="bottom-circle"
-      id="bottom-circle" />
-    <main>
-      <div id="card">
-        <div id="header"></div>
-        <div id="card-photo">
-          <img
-            src="./images/victor.jpg"
-            alt="victor photo"
-            id="photo"
-            title="victor photo" />
-          <p id="name">Victor Crest <span class="text-gray">26</span></p>
-          <p id="city" class="text-gray">London</p>
-        </div>
-        <div id="data">
-          <div class="card-data">
-            <h2>80k</h2>
-            <p class="text-gray">Followers</p>
-          </div>
-          <div class="card-data">
-            <h2>803k</h2>
-            <p class="text-gray">Likes</p>
-          </div>
-          <div class="card-data">
-            <h2>1.4k</h2>
-            <p class="text-gray">Photos</p>
-          </div>
-        </div>
+    <header id="header">
+      <nav id="nav">
+        <ul id="list-header">
+          <li>
+            <span id="logo"
+              ><img src="./icons/hazloagil.svg" alt="hazlo agil" id="logo"
+            /></span>
+          </li>
+          <li class="elem">Inicio</li>
+          <li class="elem">Servicios</li>
+          <li class="elem">Tecnologías</li>
+          <li class="elem">Clientes</li>
+          <li class="elem">Testimonios</li>
+          <li class="elem"> <button id="header-button" class="text-color">¡ÚNETE A LA REVOLUCIÓN AHORA!</button> </li>
+          <li id="language">
+          <label for="language"></label>
+            <select name="languages" id="language-button" class="elem">
+              <option value="esp"> ESPAÑOL</option>
+              <option value="eng"> INGLES </option>
+            </select>  
+          </li>
+          <li><img src="./icons/menu-icon.svg" alt="menu logo" id="menu-icon"></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <div id="main-text">
+      <h1 id="title-banner">
+        Únase a nuestra <br />
+        misión de dar <br />
+        <span class="text-color">forma al futuro</span>
+      </h1>
+      <h4 id="text-banner">
+        Nuestro equipo de expertos está trabajando arduamente <br />
+        para ser pioneros en soluciones nuevas e innovadoras que <br />
+        tendrán un impacto duradero en el mundo.
+      <h4/>
+      <button id="banner-button">¡ÚNETE A LA REVOLUCIÓN AHORA!</button>
       </div>
     </main>
   </body>
