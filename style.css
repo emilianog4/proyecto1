@@ -1,19 +1,78 @@
-* {
-  background-color: antiquewhite;
-}
-#header {
-  color: rgb(89, 42, 12);
-  letter-spacing: 1px;
-  text-align: center;
-}
-#photo {
-  width: 10em;
-  height: 10em;
+body {
+  /* background-image: url(./images/top-circle.svg),
+    url(./images/bottom-circle.svg); */
+  background-color: #19a2ae;
   margin: 0 auto;
-  border-radius: 50%;
+  font-family: "Arial", sans-serif;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.description,
-#hobbies {
-  margin: 50px 200px;
+#top-circle {
+  position: absolute;
+  z-index: 0;
+  bottom: 38%;
+  right: 54%;
+}
+#bottom-circle {
+  position: absolute;
+  z-index: 0;
+  top: 48%;
+  left: 55%;
+}
+#card {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 20em;
+  height: 22em;
+  margin: 10em auto;
+  background-color: white;
+  border-radius: 5%;
+  border-color: white;
+  border-style: 3px;
+  overflow: hidden;
+}
+
+#header {
+  height: 35%;
+  border-radius: 8% 8% 0 0;
+  background-image: url(./images/card-pattern.svg);
+}
+#card-photo {
+  align-items: center;
+  margin: 3em 0 0 0;
+}
+#photo {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 23%; /* half of header height */
+  left: 50%;
+  transform: translateX(-50%);
+}
+#data {
+  display: flex;
+  justify-content: center;
+}
+.card-data {
+  margin: 2em 0 0 0;
+  display: inline-block;
+  padding: 0 1em;
+  text-align: center;
+}
+#name,
+#city {
+  text-align: center;
+}
+.text-gray {
+  color: gray;
+  margin: 0;
+  padding: 0;
 }
