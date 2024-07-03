@@ -103,6 +103,9 @@ ul#list-header {
 
 @media (max-width: 1366px) {
   body {
+    background-image: url(./images/image-tablet.webp);
+    background-repeat: no-repeat;
+    background-position: right 15% top -215%;
     margin: 0.2em;
     width: 100vw;
   }
@@ -110,6 +113,7 @@ ul#list-header {
     display: block;
     color: #1c795b;
     margin: 1em;
+    width: 2em;
   }
   #list-header .elem {
     display: none;
@@ -117,5 +121,42 @@ ul#list-header {
   ul#list-header {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 584px) {
+  body {
+    background-image: url(./images/image-mobile.webp);
+    background-repeat: no-repeat;
+    background-position: right 1155% top -45%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  #menu-icon {
+    display: block;
+    color: #1c795b;
+    margin: 1em;
+    width: 3em;
+  }
+  #logo {
+    margin: 0;
+    padding: 0;
+  }
+  #main {
+    display: flex;
+  }
+  #text-banner {
+    margin-top: 3em;
+    font-size: 1em;
+    font-weight: 550;
+    text-align: center;
+  }
+  #title-banner {
+    text-align: center;
+  }
+  #banner-button {
+    display: none;
   }
 }
