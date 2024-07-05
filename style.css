@@ -1,8 +1,6 @@
 body {
-  background-image: url(./images/image_desktop.svg);
   background-repeat: no-repeat;
-  background-color: #1f2331;
-  background-position: right 15% top -145%;
+  background: linear-gradient(147.51deg, #1f2331 40%, #269e79 109.12%);
   margin: 1em auto;
   font-family: "Roboto", sans-serif;
   width: 70vw;
@@ -36,26 +34,7 @@ ul#list-header {
 #menu-icon {
   display: none;
 }
-#main-text {
-  margin-top: 9em;
-  margin-left: 2.5em;
-}
-#title-banner {
-  text-align: left;
-  font-size: 64px;
-  font-weight: 100;
-  line-height: 1em;
-  font-family: "Rubik", sans-serif;
-  margin: 0 auto;
-}
-#text-banner {
-  font-size: 18px;
-  font-weight: lighter;
-  line-height: 1.8em;
-  margin-top: 1em;
-  font-family: "Rubik", sans-serif;
-  margin-top: 1.5em;
-}
+
 .text-color {
   color: #28ae83;
 }
@@ -85,25 +64,77 @@ ul#list-header {
   overflow: hidden;
   margin: 0;
 }
-#banner-button {
-  background-color: #28ae83;
-  color: white;
-  font-weight: 900;
-  font-size: 0.6em;
-  padding: 1em 1.6em;
-  border-radius: 40px;
-  border-style: solid;
-  border-color: #28ae83;
+#main {
+  width: 60vw;
+  margin: 0 auto;
 }
-#banner-button:hover {
-  background-color: #27ad82;
-  border-color: #27ad82;
-  cursor: pointer;
+#service-title {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+#service-container {
+  width: 65vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  height: 195px;
+  width: 604px;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+.card-title {
+  display: flex;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: left;
+  height: 200px;
+  margin: 0;
+  padding-left: 40px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/thumbnail_card_xl.png");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #a8edd7;
+  z-index: 0;
+}
+h2.card-title {
+  width: 340px;
+}
+.card-text {
+  display: flex;
+  font-size: 0.7em;
+  width: 60%;
+  height: 195px;
+  margin: 0;
+  padding: 0 50px;
+  align-items: center;
+  line-height: 1.3em;
+  border: #1c795b 2px solid;
+  border-radius: 8%;
+  z-index: 0;
+}
+
+.card-icon {
+  position: relative;
+  z-index: 2;
+  left: 40px;
+  width: 75px;
+  height: 75px;
 }
 
 @media (max-width: 1366px) {
   body {
-    background-image: url(./images/image-tablet.webp);
     background-repeat: no-repeat;
     background-position: right 15% top -215%;
     margin: 0.2em;
@@ -126,7 +157,6 @@ ul#list-header {
 
 @media (max-width: 584px) {
   body {
-    background-image: url(./images/image-mobile.webp);
     background-repeat: no-repeat;
     background-position: right 1155% top -45%;
     position: fixed;
