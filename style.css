@@ -1,8 +1,6 @@
 body {
-  background-image: url(./images/image_desktop.svg);
   background-repeat: no-repeat;
-  background-color: #1f2331;
-  background-position: right 15% top -145%;
+  background: linear-gradient(147.51deg, #1f2331 40%, #269e79 109.12%);
   margin: 1em auto;
   font-family: "Roboto", sans-serif;
   width: 70vw;
@@ -36,26 +34,7 @@ ul#list-header {
 #menu-icon {
   display: none;
 }
-#main-text {
-  margin-top: 9em;
-  margin-left: 2.5em;
-}
-#title-banner {
-  text-align: left;
-  font-size: 64px;
-  font-weight: 100;
-  line-height: 1em;
-  font-family: "Rubik", sans-serif;
-  margin: 0 auto;
-}
-#text-banner {
-  font-size: 18px;
-  font-weight: lighter;
-  line-height: 1.8em;
-  margin-top: 1em;
-  font-family: "Rubik", sans-serif;
-  margin-top: 1.5em;
-}
+
 .text-color {
   color: #28ae83;
 }
@@ -85,29 +64,84 @@ ul#list-header {
   overflow: hidden;
   margin: 0;
 }
-#banner-button {
-  background-color: #28ae83;
-  color: white;
-  font-weight: 900;
-  font-size: 0.6em;
-  padding: 1em 1.6em;
-  border-radius: 40px;
-  border-style: solid;
-  border-color: #28ae83;
+#main {
+  width: 60vw;
+  margin: 0 auto;
 }
-#banner-button:hover {
-  background-color: #27ad82;
-  border-color: #27ad82;
-  cursor: pointer;
+#service-title {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+#service-container {
+  width: 65vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  height: 195px;
+  width: 600px;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+.card-title {
+  display: flex;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: left;
+  height: 195px;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 40px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/thumbnail_card_xl.png");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #a8edd7;
+  z-index: 1;
+}
+h2.card-title {
+  width: 250px;
+  position: relative;
+  left: 15px;
+}
+.card-text {
+  display: flex;
+  position: relative;
+  right: 60px;
+  font-size: 0.7em;
+  width: 300px;
+  height: 195px;
+  margin: 0;
+  padding: 0 50px;
+  align-items: center;
+  line-height: 1.3em;
+  border: #1c795b 2px solid;
+  border-radius: 8%;
+  z-index: 0;
+}
+.card-icon {
+  position: relative;
+  z-index: 2;
+  right: 20px;
+  width: 75px;
+  height: 75px;
 }
 
 @media (max-width: 1366px) {
   body {
-    background-image: url(./images/image-tablet.webp);
-    background-repeat: no-repeat;
-    background-position: right 15% top -215%;
-    margin: 0.2em;
-    width: 100vw;
+    margin: 0 auto;
+    /* width: 100vw; */
+    height: 80vh;
   }
   #menu-icon {
     display: block;
@@ -122,18 +156,90 @@ ul#list-header {
     display: flex;
     justify-content: space-between;
   }
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    display: none;
+  }
+  #service-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .card-1 {
+    margin: 0 auto;
+    width: 300px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-title {
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: left;
+    height: 195px;
+    margin: 0;
+    padding: 0 70px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/thumbnail_card_xl.png");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #a8edd7;
+    z-index: 0;
+  }
+  h2.card-title {
+    width: 300px;
+    height: 220px;
+    position: relative;
+    top: 70px;
+    z-index: 0;
+  }
+  .card-text {
+    display: flex;
+    position: relative;
+    font-size: 0.7em;
+    width: 340px;
+    height: 450px;
+    margin: 0;
+    padding: 0 50px;
+    align-items: center;
+    line-height: 1.3em;
+    border: #1c795b 2px solid;
+    border-radius: 8%;
+    z-index: 0;
+    left: 12px;
+    bottom: 2px;
+  }
+  .card-icon {
+    position: relative;
+    z-index: 2;
+    left: 13px;
+    top: 40px;
+    width: 75px;
+    height: 75px;
+  }
 }
 
 @media (max-width: 584px) {
   body {
-    background-image: url(./images/image-mobile.webp);
-    background-repeat: no-repeat;
-    background-position: right 1155% top -45%;
-    position: fixed;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 100vw;
+    /* width: 100vw; */
   }
+
   #menu-icon {
     display: block;
     color: #1c795b;
@@ -146,17 +252,84 @@ ul#list-header {
   }
   #main {
     display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
-  #text-banner {
-    margin-top: 3em;
-    font-size: 1em;
-    font-weight: 550;
-    text-align: center;
-  }
-  #title-banner {
-    text-align: center;
-  }
-  #banner-button {
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
     display: none;
+  }
+  #service-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #service-title {
+    width: 100vw;
+    margin: 0;
+  }
+  .card-1 {
+    margin: 0 auto;
+    width: 300px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-title {
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: left;
+    height: 195px;
+    margin: 0;
+    padding: 0 70px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/thumbnail_card_xl.png");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #a8edd7;
+    z-index: 0;
+  }
+  h2.card-title {
+    width: 300px;
+    height: 220px;
+    position: relative;
+    top: 70px;
+    left: 100px;
+    z-index: 0;
+  }
+  .card-text {
+    display: flex;
+    position: relative;
+    font-size: 0.7em;
+    width: 340px;
+    height: 450px;
+    margin: 0;
+    padding: 0 50px;
+    align-items: center;
+    line-height: 1.3em;
+    border: #1c795b 2px solid;
+    border-radius: 8%;
+    z-index: 0;
+    left: 100px;
+    bottom: 2px;
+  }
+  .card-icon {
+    position: relative;
+    z-index: 2;
+    left: 100px;
+    top: 40px;
+    width: 75px;
+    height: 75px;
   }
 }
