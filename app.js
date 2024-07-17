@@ -17,7 +17,6 @@
   esto es tanto para querySelector como para querySelectorAll.
 */
 
-
 // const title = document.querySelector('.title')
 // console.log(title.textContent)
 
@@ -33,7 +32,7 @@
 //  si utizamos querySelectorAll obtenemos una nodeList o una lista de nodos. Podemos iterar sobre ella.
 //  es importante saber que el nodeList no es un array, pero podemos transformarlo.
 //  si bien parece un array no permite utizar metodos javascript como push, pop, filter o map.
-// 
+//
 
 // const listItems = document.querySelectorAll('.list-item')
 // console.log(listItems)
@@ -46,35 +45,29 @@
 // const listItemsArray = Array.from(listItems)
 // console.log(listItemsArray)
 
-
-
 //   Ejercicio: Selecciona el primer párrafo(<p>) en el documento y cambia su texto a "Texto modificado".
 //   Ejemplo de resultado esperado: El primer párrafo del documento debe mostrar "Texto modificado".
 const firstP = document.querySelector('.p')
-firstP.textContent = 'texto modificado';
-
+firstP.textContent = 'texto modificado'
 
 //   Ejercicio: Selecciona todos los elementos de lista(<li>) y cambia su color de texto a rojo.
 //   Ejemplo de resultado esperado: Todos los elementos de lista deben aparecer con el texto en color rojo.
-const listItems = document.querySelectorAll('li');
+const listItems = document.querySelectorAll('li')
 
-listItems.forEach(item => {
-  item.style.color = 'red';
-});
-
+listItems.forEach((item) => {
+  item.style.color = 'red'
+})
 
 //   Ejercicio: Selecciona un elemento con el ID header y cambia su texto a "Encabezado modificado".
 //   Ejemplo de resultado esperado: El elemento con el ID header debe mostrar "Encabezado modificado".
-const header = document.getElementById('header');
-header.textContent = 'Encabezado modificado';
-
+const header = document.getElementById('header')
+// header.textContent = 'Encabezado modificado';
 
 //   Ejercicio: Selecciona una imagen(<img>) y obtén su atributo src. Luego, cambia su atributo src a "new-image.jpg".
 //   Ejemplo de resultado esperado: El atributo src de la imagen debe ser cambiado a "new-image.jpg".
-const image = document.querySelector('img');
-const src = image.getAttribute('src');
-image.setAttribute('src', 'new-image.jpg');
-
+const image = document.querySelector('img')
+const src = image.getAttribute('src')
+image.setAttribute('src', 'new-image.jpg')
 
 //   Ejercicio:
 //   Selecciona un elemento con la clase box y agrégale la clase highlight.
@@ -85,9 +78,9 @@ image.setAttribute('src', 'new-image.jpg');
 //   El elemento debe tener la clase highlight agregada.
 //   La clase highlight debe ser removida del elemento.
 //   Debe retornar true si el elemento tiene la clase box.
-const box = document.querySelector('.box');
-box.classList.add('highlight');
-box.classList.remove('highlight');
+const box = document.querySelector('.box')
+box.classList.add('highlight')
+box.classList.remove('highlight')
 if (box.classList.contains('box')) {
-  console.log(true);
-};
+  console.log(true)
+}
