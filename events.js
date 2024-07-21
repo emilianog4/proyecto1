@@ -30,6 +30,8 @@ const validateEmail = (email) => {
   const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
   return re.test(String(email).toLowerCase())
 }
+
+
 const validateField = (name, value) => {
   let isValid = true
 
@@ -54,6 +56,8 @@ const validateField = (name, value) => {
 
   return isValid
 }
+
+
 const handleChange = (event) => {
   const { name, value } = event.target
   console.log(name, value)

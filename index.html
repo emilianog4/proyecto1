@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Hazlo Ágil</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <title>Hazlo Ágil</title>
-</head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav id="navbar" class="navbar">
+      <div id="logo" class="logo">
+        <a id="modalBtn" href="#">Abrir Modal</a>
+      </div>
 
-<body>
-  <header id="header">
-    <ul>
-      <li><a href="events.html" class="link">Eventos</a></li>
-    </ul>
-  </header>
-  <p class="p">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ad!
-  </p>
+      <div id="links"></div>
 
-  <ul id="ul">
-    <li class="li">element 1</li>
-    <li class="li">element 2</li>
-    <li class="li">element 3</li>
-  </ul>
+      <label class="menu" for="menu"
+        ><img
+          src="icons/bars-solid.svg"
+          alt="menu-icon"
+          id="menu-icon"
+          class="menu-icon" />
+      </label>
+      <input type="checkbox" name="checkbox" id="menu" />
+      <ul>
+        <li class="li-links"><a href="#home" class="link">Home</a></li>
+        <li class="li-links"><a href="#about" class="link">About</a></li>
+        <li class="li-links"><a href="#contact" class="link">Contact</a></li>
+      </ul>
+    </nav>
 
-  <img src="image.jpg" alt="image" id="img" />
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Esto es un modal básico.</p>
+      </div>
+    </div>
 
-  <div class="box">BOX</div>
-
-  <script src="app.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
